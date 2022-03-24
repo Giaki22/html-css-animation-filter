@@ -1,0 +1,243 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+}
+.ex-10-icon {
+    font-size: 60px;
+}
+.ex-11-icon {
+    font-size: 60px;
+}
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+/* Esercizi */
+/* Esercizio 1 */
+.ex-1-square{
+    transition:2s;
+}
+.ex-1-square:hover{
+    background-color: red;
+}
+/* Esercizio 2 */
+.ex-2-square{
+    transition: 2s;
+}
+.ex-2-square:active{
+    width: 1100px;
+}
+/* Esercizio 3 */
+.ex-3-square{
+    transition: 2s;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+/* Esercizio 4 */
+.ex-4-square{
+    transition:2s;
+}
+.ex-4-square:hover{
+    opacity: 0%;
+}
+/* Esercizio 5 */
+.ex-5-square{
+    transition:2s;
+}
+.ex-5-square:hover{
+    transform:scale(2);
+}
+.ex-5-square:active{
+    transform:scale(0.5);
+}
+/* Esercizio 6 */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+/* Esercizio 7 */
+.ex-7-img{
+    transition: 2s;
+}
+.ex-7-img:hover{
+    filter: grayscale(0.5) sepia(0.5);
+}
+/* Esercizio 8 */
+.ex-8-img{
+    transition: 2s;
+}
+.ex-8-img:hover{
+    filter: grayscale(0.5) sepia(0.5);
+    border-radius: 20px;
+}
+/* Esercizio 9 */
+.ex-9-img{
+    transition: 2s;
+}
+.ex-9-img:hover{
+    filter: grayscale(0.5) sepia(0.5);
+    border-radius: 20px;
+    transform:scale(1.5);
+}
+/* Esercizio 10 */
+.ex-10-icon{
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* Esercizio 11 */
+.ex-11-icon{
+    animation: spin75 2s linear infinite;
+}
+@keyframes spin75 {
+    0%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation: moveitup 2s linear infinite;
+}
+@keyframes moveitup {
+    0%{
+        left:10%;
+    }
+    50%{
+        left:60%;
+    }
+    100%{
+        left:10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: moveitbottom 2s linear infinite;
+}
+@keyframes moveitbottom {
+    0%{
+        right:10%;
+    }
+    50%{
+        right:60%;
+    }
+    100%{
+        right:10%;
+    }
+}
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation: spinitup 2s linear infinite;
+}
+@keyframes spinitup {
+    0%{
+        top:-10px;
+        left: 10%;
+    }
+    20%{
+        top:-10px;
+        left: 80%;
+    }
+    40%{
+        top: 60px;
+        left:80%;
+    }
+    60%{
+        top:60px;
+        left:-10%
+    }
+    80%{
+        top: -20px;
+        left:0%
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: spinitbottom 2s linear infinite;
+}
+@keyframes spinitbottom {
+    0%{
+        bottom:-10px;
+        right: 10%;
+    }
+    20%{
+        bottom:-10px;
+        right: 80%;
+    }
+    40%{
+        bottom: 60px;
+        right:80%;
+    }
+    60%{
+        bottom:60px;
+        right:-10%
+    }
+    80%{
+        bottom: -20px;
+        right:0%
+    }
+}
